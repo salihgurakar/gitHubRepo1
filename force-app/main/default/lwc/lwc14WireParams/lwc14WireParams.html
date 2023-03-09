@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <lightning-input label="Limit" type="number" onchange={handleChange1}></lightning-input>
+        <lightning-button label="Limit+2" onclick={handleclick}></lightning-button>
+        <lightning-input label="Offset" type="number" onchange={handleChange2}></lightning-input>
+        <lightning-input label="Search Last Name" type="text" onchange={handleChange3}></lightning-input>
+    
+        <template if:true={conlist}>
+            <lightning-datatable
+            key-field="Id"
+            data={conlist}
+            columns={stn}>
+    </lightning-datatable>
+        </template>
+        <template if:true={errorlist}>
+    {errorlist}
+        </template>
+    </lightning-card>     
+</template>

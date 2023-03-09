@@ -1,0 +1,27 @@
+<template>
+    <table class="content-table" >
+        <thead>
+            <tr>
+                <td>Exam Name</td>
+                <td>Exam Total Score</td>
+                <td>Exam Date</td>
+            </tr>
+        </thead>
+        
+        <tbody>
+        <template for:each={examlist} for:item="exm">
+
+            <tr key={exm.Id}>
+
+                <td>{exm.Name}</td>
+                <td>{exm.Total_Score__c}</td>
+                <td>{exm.Date_of_Exam__c}</td>
+
+            </tr>
+<c-lwc19-exam-question key={exm.Id} exam-id={exm.Id}></c-lwc19-exam-question>
+        </template>
+     
+       </tbody>
+        
+        </table>
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="P1">
+        Welcome to P1 
+    
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" onchange={handleChangeEvent}> </lightning-input>
+        </div>
+
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-button variant="base" label="Submit to Child" title="Submit to Child" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+        </div>
+
+        <br/> <br/> 
+        <c-beta-p2> </c-beta-p2> 
+    </lightning-card> 
+</template>

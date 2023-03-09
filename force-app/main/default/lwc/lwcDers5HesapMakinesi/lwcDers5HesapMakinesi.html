@@ -1,0 +1,33 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <lightning-input name="num1" type="number" label="Number 1" onblur={handlemethod1}></lightning-input>
+            <lightning-input name="num2" type="number" label="Number 2" onblur={handlemethod1}></lightning-input>
+               <br>
+            <lightning-button-group>
+                    <lightning-button label="+" onclick={toplama}></lightning-button>
+                    <lightning-button label="-" onclick={cikarma}></lightning-button>
+                    <lightning-button label="*" onclick={carpma}></lightning-button>
+                    <lightning-button label="/" onclick={bolme}></lightning-button>
+                    <lightning-button label="CE" variant="destructive" icon-name="utility:delete" onclick={silme}></lightning-button>
+                </lightning-button-group>
+                <br> <br>
+        <h1>Sonuç: {sonuc} </h1> <br>
+<!-- 
+<lightning-button variant="success" label="Göster" onclick={show}> </lightning-button>
+<lightning-button label="Gizle" onclick={hide}> </lightning-button>  -->
+
+<lightning-button label="Göster/Sakla" onclick={handleclick}></lightning-button>
+<template if:true={goster}>
+    <h1>Onceki Sonuclar: {oncekiSonuclar} </h1>
+</template>
+
+
+
+</div>
+           
+    
+    </lightning-card>
+    
+        
+    </template>

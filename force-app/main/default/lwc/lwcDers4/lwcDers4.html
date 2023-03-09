@@ -1,0 +1,19 @@
+<template>
+    
+    <lightning-card>
+    
+     
+    <lightning-input type="text" label="İsim" onblur={handlemethod1}></lightning-input>
+    <lightning-input type="text" label="Soyisim" onblur={handlemethod2}></lightning-input>
+    <lightning-input type="number" label="Yas" onblur={handlemethod3}></lightning-input>
+    <lightning-input type="text" label="Memleket" onblur={handlemethod4}></lightning-input>
+    
+    <lightning-button variant="brand-outline" label="Bilgileri Göster" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <br>
+    Adiniz: {isim1} <br>
+    Soyadiniz: {soyisim1} <br>
+    Yasiniz: {yas1} <br>
+    Memleketiniz: {memleket1}
+    
+    </lightning-card>
+    </template>

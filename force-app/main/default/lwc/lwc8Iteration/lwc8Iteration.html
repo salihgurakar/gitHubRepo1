@@ -1,0 +1,48 @@
+<template>
+    <!--
+    <lightning-card title="Iteration">
+        <template iterator:it={country}>
+            <p key={it.value}>Country: {it.value} </p>
+        </template>
+    </lightning-card> -->
+
+    <lightning-card title="Country Table">
+    <table class='slds-table slds-table_bordered slds-table_cell-buffer' border="2px solid black">
+    <thead>
+        <tr>
+        <th>Country</th>
+        </tr>
+    </thead>
+            
+    <tbody>            
+        <template iterator:it={country}>
+        <tr key={it.value}>
+        <td>{it.value}</td>
+        </tr>
+        </template>             
+    </tbody>
+             
+    </table>           
+
+    </lightning-card>
+    <br>
+    <lightning-card title="Iteration 2">
+
+        <lightning-button label="Country" name="cntry" onclick={handleClick}></lightning-button>
+        <template if:true={goster1} iterator:it={country}>
+            <div key={it.value}> {it.value} </div>
+        </template>
+        <lightning-button label="Animal" name="nml" onclick={handleClick}></lightning-button>
+        <template if:true={goster2} iterator:it={animal}>
+            <div key={it.value}> {it.value} </div>
+        </template>
+        <lightning-button label="Friend" name="frnd" onclick={handleClick}></lightning-button>
+        <template if:true={goster3} iterator:it={friend}>
+            <div key={it.value}> {it.value} </div>
+        </template>
+
+
+    </lightning-card> 
+
+
+</template>

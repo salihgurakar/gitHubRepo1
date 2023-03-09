@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+        <template if:true={oppList}>
+        <lightning-datatable
+                key-field="Id"
+                data={oppList}
+                columns={stn}>
+        </lightning-datatable>
+    </template>
+    <template if:true={errorList}>
+error;
+    </template>
+    </lightning-card>
+</template>

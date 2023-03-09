@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+
+<masterLabel>Component Haberlesmesi</masterLabel>
+<isExposed>true</isExposed>
+<description>Bu message channel component haberlesmesi icindir.</description>
+<lightningMessageFields>
+    <fieldName>postakusu</fieldName>
+    <description>Leyla ile Mecnunun haberlesmesi</description>
+</lightningMessageFields>
+
+</lightningMessageChannel>

@@ -1,0 +1,51 @@
+<!--
+<template>
+    <lightning-card>
+<ul>
+    <template for:each={customerList} for:item="cust"> 
+<li key={cust.id} >
+    <h1>{cust.name}</h1>
+    <h1>{cust.phone}</h1>
+    <h1>{cust.email}</h1> <br><br>
+</li>
+
+    </template>
+</ul>
+
+
+    </lightning-card>
+</template>
+-->
+
+
+
+<template>
+    <lightning-card>
+
+        <table class='slds-table slds-table_bordered slds-table_cell-buffer' border="2px solid black">
+<thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+</thead>
+
+<tbody>
+
+    <template for:each={customerList} for:item="cust">
+        <tr key={cust.id}>
+<td>{cust.id} </td>           
+<td>{cust.name} </td>
+<td>{cust.phone} </td>
+<td>{cust.email} </td>
+        </tr>
+    </template>
+ 
+</tbody>
+ 
+</table>
+
+    </lightning-card>
+</template>

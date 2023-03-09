@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Body Mass Index (BMI) Calculator">
+        <lightning-input label="Enter your weight" type="number" onblur={onChangeWeight} class="slds-p-around_medium lgc-bg"></lightning-input>
+        <lightning-input label="Enter your height" type="number" onblur={onHeightChange} class="slds-p-around_medium lgc-bg"></lightning-input>
+    <lightning-button label="Calcuate BMI" onclick={handlerClick} class="slds-p-around_medium lgc-bg"></lightning-button>
+    <p class="slds-p-around_medium lgc-bg">
+        {result}
+    </p>
+    
+    </lightning-card>
+</template>

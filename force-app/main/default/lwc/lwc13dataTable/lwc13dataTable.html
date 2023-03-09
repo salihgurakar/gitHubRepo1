@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+        <template if:true={accList}>
+        <lightning-datatable
+                key-field="Id"
+                data={accList}
+                columns={stn}>
+        </lightning-datatable>
+    </template>
+    <template if:true={errorList}>
+errorList;
+    </template>
+    </lightning-card>
+</template>
